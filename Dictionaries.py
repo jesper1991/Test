@@ -30,4 +30,3 @@ print(rec['jobs']) # Print jobs
 print(rec['jobs'][-1]) # Print last job
 rec['jobs'].append('janitor') # L'gg till jobb
 print(rec)
-print("Hello")

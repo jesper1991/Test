@@ -80,3 +80,15 @@ while x > 0:
     print('spam!' * x)
     x -= 1 # Glöm ej -1, annars fortsätter denna oändligt
 
+# Iterables
+
+squares = [x ** 2 for x in [1, 2, 3, 4, 5]]
+print(squares) # Upphöjt till två på tal ur listan och lagrar i listan squares
+
+# Ovan kan också göras såhär, och är lättare att läsa - for loop:
+squares = [] 
+for x in [1, 2, 3, 4, 5]:
+    squares.append(x ** 2)
+
+print(squares)
+

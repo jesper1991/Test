@@ -92,3 +92,19 @@ for x in [1, 2, 3, 4, 5]:
 
 print(squares)
 
+# TUPLES
+
+T = (1, 2, 3, 4)
+print(T)
+
+T + (5, 6) # Concatenation
+print(T[1:]) # Index + Slice
+
+# Tuple-specifika methods
+T.index(4)
+T.count(4)
+
+# För att ersätta ett värde i en tuple måste man gå omväg (immutable) - 
+# t.ex. för att ersätta första värdet med 2:
+T = (2,) + T[1:]
+print(T)

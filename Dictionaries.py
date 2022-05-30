@@ -28,5 +28,30 @@ print(rec['name']['last']) # Print last name
 
 print(rec['jobs']) # Print jobs
 print(rec['jobs'][-1]) # Print last job
-rec['jobs'].append('janitor') # L'gg till jobb
+rec['jobs'].append('janitor') # Lägg till jobb
 print(rec)
+
+D = {'a': 1, 'b': 2,'c': 3}
+print(D)
+D['e'] = 99 # Lägga till key:value i en dict.
+print(D)
+
+# Hur vet man innan om en key inte finns?
+
+print('f' in D) # Returns False
+
+# IF/ELSE
+if not 'c' in D:
+    print('missing') # Kan printa missing om key inte finns i dict D.
+    print('no, really...')
+else:
+    print("Finns")
+# GET
+value = D.get('a', 0) # Get value av angiven key, default 0 om ej finns.
+print(value)
+
+# Samma funktion som Get ovan men if else:
+value = D['a'] if 'a' in D else 0
+print(value)
+
+# for Loops

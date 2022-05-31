@@ -108,3 +108,6 @@ T.count(4)
 # t.ex. för att ersätta första värdet med 2:
 T = (2,) + T[1:]
 print(T)
+
+for x in T:
+    print("Hello")

@@ -1,0 +1,23 @@
+
+# Objektorienterad programmering
+# Egna klasser
+
+class Worker:
+    def __init__(self, name, pay):  # Objekt
+        self.name = name            # Attribute
+        self.pay = pay              # Attribute
+    def lastName(self):             # Method
+        return self.name.split()[-1]    # lastName = self.name split efter mellanslag, och väljer 1 bakifrån i listan. D.v.s. [Bob , >Smith<]
+    def giveRaise(self, percent):   # Method
+        self.pay *= (1.0 + percent)
+    
+    bob = Worker('Bob Smith', 50000)
+    sue = Worker('Sue Jones', 60000)
+
+    print(bob.pay)
+    print(bob.name)
+    print(bob.lastName())
+    print(sue.lastName())
+
+    sue.giveRaise(.10)
+    print(sue.pay)  # 66000

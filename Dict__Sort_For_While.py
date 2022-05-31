@@ -109,5 +109,4 @@ T.count(4)
 T = (2,) + T[1:]
 print(T)
 
-for x in T:
-    print("Hello")
+print("Hello")

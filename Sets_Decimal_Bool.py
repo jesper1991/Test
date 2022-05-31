@@ -47,4 +47,14 @@ X = None        # Placeholder
 L = [None] * 100 # Skapa lista av 100 namn, men värde None
 print(L)
 
+# Man kan kolla om type = Sant eller falskt genom jämförelser på olika sätt:
+if type(L) == type([]):     # Using type syntaax
+    print("Yes")
+
+if type(L) == list:         # Using type name
+    print("Yes")
+
+if isinstance(L, list):     # Object oriented test
+    print("Yes")
+
 
